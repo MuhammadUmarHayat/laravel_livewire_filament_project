@@ -1,0 +1,92 @@
+https://livewire.laravel.com/docs/navigate
+https://filamentphp.com/
+
+//livewire and filament
+php artisan --version
+Laravel Framework 11.15.0
+
+https://www.youtube.com/watch?v=DvtN0iPsk14&list=PLRB0wzP8AS_Fqq6JCWNk8QA-YKwXWAaFw&index=2
+
+>>composer create-project laravel/laravel project_name
+composer create-project --prefer-dist laravel/laravel project_name
+composer create-project --prefer-dist laravel/laravel project_name "10.*"
+
+
+cd project_name
+composer update
+
+>>cd larvellivewireproject
+>>php artisan serve
+Google: livewire>>docs>>version3.x>>docs
+>>composer require livewire/livewire 
+Google : Laravel filament
+filamentphp.com
+composer require filament/filament:"^3.0-stable" -w
+php artisan filament:install --panels
+php artisan migrate
+php artisan serve
+localhost/admin/login
+php artisan make:filament-user
+
+template: https://github.com/phptechlife/laravel_livewire_app
+php artisan livewire:publish --config
+php artisan livewire:layout
+php artisan make:livewire CreatePost
+php artisan make:livewire ShowHome
+
+ @livewireStyles
+@livewireScripts
+
+php artisan make:migration create_services_table
+php artisan migrate
+php artisan make:filament-resource Service  //create module
+php artisan make:model Service
+php artisan make:livewire ShowServicesPage
+php artisan make:livewire ShowService
+php artisan make:component service-page-card --view
+
+php artisan make:migration create_members_table
+php artisan migrate
+php artisan make:filament-resource Member
+(form funtion+table funtion)
+php artisan make:model Member
+php artisan storage:link
+env>>APP_URL=http://localhost:8000
+Notifications(create,edit)
+php artisan make:livewire ShowTeamPage  //component
+rout
+dd($members)
+php artisan make:component TeamCard --view
+php artisan make:migration create_categories_table
+php artisan migrate
+php artisan make:filament-resource Category
+php artisan make:model Category
+generate slug from a title
+
+php artisan make:migration create_articles_table
+php artisan migrate
+php artisan make:filament-resource Article   //module
+php artisan make:model Article
+php artisan make:livewire ShowBlog //component
+php artisan make:livewire BlogDetail
+leftjoin
+
+php artisan make:model Faq -m   //create model and migration
+php artisan migrate
+php artisan make:filament-resource Faq //create module in admin panel
+
+//static pages lec14
+php artisan make:model Page -m
+php artisan migrate
+php artisan make:filament-resource Page
+php artisan make:livewire ShowFaqPage //component
+php artisan make:livewire ShowPage
+//contact us
+php artisan make:livewire ShowContactPage //component
+mailtrap.io
+php artisan make:mail ContactEmail
+views/mail/contact-mail.blade.php //email template file
+helpers file
+composer.jason>autoload
+
+
